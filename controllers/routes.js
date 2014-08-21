@@ -22,6 +22,15 @@ router.get('/status',function(req,res){
 });
 
 router.post('/record',function(req,res){
+    console.log(req.body);
+    var data = JSON.parse(req.body.toString());
+    console.log(data);
+/*    for(var recordlist in data){
+        console.log(recordlist.id);
+    }*/
+
+
+    res.send('200');
     console.log('根据请求开始记录');
 });
 

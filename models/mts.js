@@ -15,7 +15,13 @@ var mts = {
 
     getPort : function () {
         return serverPort;
+    },
+
+    startRecord: function(err,id,name,callback){
+        console.log(id + name);
+        callback();
     }
+
 };
 
 
